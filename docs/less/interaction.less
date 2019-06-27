@@ -1,0 +1,236 @@
+// out: ../css/
+
+@lgrey: #ddd;
+@dgrey: #696763;
+@cream: #F5F5ED;
+@dark: #40403E;
+@yellow: #FE980F;
+
+// Dropdowns ................................
+
+// Keyframes .................................
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+// Mixine
+.nav-drop(@minWidth) {
+
+    display: inline-block;
+    position: absolute;
+    // left: -50%;
+    left: -20%;
+    top: 40px;
+    z-index: 100;
+
+    padding: 0.6rem 1.2rem;
+
+    background-color: #40403E;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20%);
+    transition: all 0.5s ease;
+
+    li {
+        display: block;
+        min-width: @minWidth;
+        margin: 0.6rem 0;
+
+        a {
+            color: @lgrey;
+
+            &:hover {
+                color: @yellow;
+            }
+        }
+    }
+}
+
+header {
+
+    .wrapper.middle .manage .left .drops {
+        display: inline-block;
+
+        li.drop.country {
+            display: inline-block;
+            position: relative;
+
+            ul.dropdown.country {
+                .nav-drop(50px);
+
+                &.active {
+                    opacity: 0.9;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        li.drop.currency {
+            display: inline-block;
+            position: relative;
+
+            ul.dropdown.currency {
+                .nav-drop(100px);
+
+                &.active {
+                    opacity: 0.9;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+
+    .wrapper.bottom .navigation .btns > ul {
+
+        li.drop.shop {
+            position: relative;
+            
+            ul.dropdown.shop {
+
+                .nav-drop(140px);
+            }
+
+            &:hover {
+
+                ul.dropdown.shop {
+                    opacity: 0.9;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+            }
+        }
+        
+        li.drop.blog {
+            position: relative;
+            
+            ul.dropdown.blog {
+                
+                .nav-drop(140px);
+            }
+
+            &:hover {
+
+                ul.dropdown.blog {
+                    opacity: 0.9;
+                    visibility: visible;
+                    transform: translateY(0);
+                }
+            }
+        }
+    }
+}
+
+main aside {
+
+    ul.category-drop {
+        border: none;
+        position: absolute;
+       
+        transform: translateY(-10%);
+        opacity: 0;
+        visibility: hidden;
+
+        &.active {
+            border: none;
+            position: relative;
+            visibility: visible;
+            transform: translateY(0);
+            opacity: 1;
+            transition: all 0.8s ease;
+            // border-top: 1px solid @yellow;
+            border-left: 1px solid @yellow;
+        }
+    }
+}
+
+// Banner menu ..............................
+
+.banner .wrapper {
+
+    a.arrow {
+        z-index: 100;
+    }
+
+    > .card {
+        display: none;
+        position: absolute;
+        z-index: 10;
+
+        animation: fadeInFromNone 0.8s ease-out;
+
+        &.active {
+            display: block;
+            position: relative;
+        }
+    }
+}
+
+// Tab menu ..............................
+
+.wrap-tab {
+
+    .btns {
+
+        a.btn {
+            &.active {
+                color: #fff !important;
+                background-color: @yellow;
+            }
+        }
+    }
+
+    .tabs {
+
+        .tab {
+            display: none;
+            position: absolute;
+
+            animation: fadeInFromNone 0.8s ease-out;
+
+            &.active {
+                display: block;
+                position: relative;
+            }
+
+        }
+    }
+}
+
+// Recom slider menu ..............................
+
+.wrap-slider {
+
+    a.arrow {
+        z-index: 100;
+    }
+
+    .slider {
+        display: none;
+        position: absolute;
+        z-index: 10;
+
+        animation: fadeInFromNone 0.8s ease-out;
+
+        &.active {
+            display: block;
+            position: relative;
+        }
+    }
+}

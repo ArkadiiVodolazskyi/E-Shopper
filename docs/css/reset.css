@@ -1,0 +1,16 @@
+/* Reset styles  */
+html, body, 
+h1, h2, h3, h4, h5, h6,
+div, p, a, ul, li, span {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-weight: normal;
+    font-family: Roboto, sans-serif;
+
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}

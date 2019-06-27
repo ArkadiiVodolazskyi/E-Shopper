@@ -1,0 +1,202 @@
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+header .wrapper.middle .manage .left .drops {
+  display: inline-block;
+}
+header .wrapper.middle .manage .left .drops li.drop.country {
+  display: inline-block;
+  position: relative;
+}
+header .wrapper.middle .manage .left .drops li.drop.country ul.dropdown.country {
+  display: inline-block;
+  position: absolute;
+  left: -20%;
+  top: 40px;
+  z-index: 100;
+  padding: 0.6rem 1.2rem;
+  background-color: #40403E;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20%);
+  transition: all 0.5s ease;
+}
+header .wrapper.middle .manage .left .drops li.drop.country ul.dropdown.country li {
+  display: block;
+  min-width: 50px;
+  margin: 0.6rem 0;
+}
+header .wrapper.middle .manage .left .drops li.drop.country ul.dropdown.country li a {
+  color: #ddd;
+}
+header .wrapper.middle .manage .left .drops li.drop.country ul.dropdown.country li a:hover {
+  color: #FE980F;
+}
+header .wrapper.middle .manage .left .drops li.drop.country ul.dropdown.country.active {
+  opacity: 0.9;
+  visibility: visible;
+  transform: translateY(0);
+}
+header .wrapper.middle .manage .left .drops li.drop.currency {
+  display: inline-block;
+  position: relative;
+}
+header .wrapper.middle .manage .left .drops li.drop.currency ul.dropdown.currency {
+  display: inline-block;
+  position: absolute;
+  left: -20%;
+  top: 40px;
+  z-index: 100;
+  padding: 0.6rem 1.2rem;
+  background-color: #40403E;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20%);
+  transition: all 0.5s ease;
+}
+header .wrapper.middle .manage .left .drops li.drop.currency ul.dropdown.currency li {
+  display: block;
+  min-width: 100px;
+  margin: 0.6rem 0;
+}
+header .wrapper.middle .manage .left .drops li.drop.currency ul.dropdown.currency li a {
+  color: #ddd;
+}
+header .wrapper.middle .manage .left .drops li.drop.currency ul.dropdown.currency li a:hover {
+  color: #FE980F;
+}
+header .wrapper.middle .manage .left .drops li.drop.currency ul.dropdown.currency.active {
+  opacity: 0.9;
+  visibility: visible;
+  transform: translateY(0);
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.shop {
+  position: relative;
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.shop ul.dropdown.shop {
+  display: inline-block;
+  position: absolute;
+  left: -20%;
+  top: 40px;
+  z-index: 100;
+  padding: 0.6rem 1.2rem;
+  background-color: #40403E;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20%);
+  transition: all 0.5s ease;
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.shop ul.dropdown.shop li {
+  display: block;
+  min-width: 140px;
+  margin: 0.6rem 0;
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.shop ul.dropdown.shop li a {
+  color: #ddd;
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.shop ul.dropdown.shop li a:hover {
+  color: #FE980F;
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.shop:hover ul.dropdown.shop {
+  opacity: 0.9;
+  visibility: visible;
+  transform: translateY(0);
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.blog {
+  position: relative;
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.blog ul.dropdown.blog {
+  display: inline-block;
+  position: absolute;
+  left: -20%;
+  top: 40px;
+  z-index: 100;
+  padding: 0.6rem 1.2rem;
+  background-color: #40403E;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20%);
+  transition: all 0.5s ease;
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.blog ul.dropdown.blog li {
+  display: block;
+  min-width: 140px;
+  margin: 0.6rem 0;
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.blog ul.dropdown.blog li a {
+  color: #ddd;
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.blog ul.dropdown.blog li a:hover {
+  color: #FE980F;
+}
+header .wrapper.bottom .navigation .btns > ul li.drop.blog:hover ul.dropdown.blog {
+  opacity: 0.9;
+  visibility: visible;
+  transform: translateY(0);
+}
+main aside ul.category-drop {
+  border: none;
+  position: absolute;
+  transform: translateY(-10%);
+  opacity: 0;
+  visibility: hidden;
+}
+main aside ul.category-drop.active {
+  border: none;
+  position: relative;
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.8s ease;
+  border-left: 1px solid #FE980F;
+}
+.banner .wrapper a.arrow {
+  z-index: 100;
+}
+.banner .wrapper > .card {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  animation: fadeInFromNone 0.8s ease-out;
+}
+.banner .wrapper > .card.active {
+  display: block;
+  position: relative;
+}
+.wrap-tab .btns a.btn.active {
+  color: #fff !important;
+  background-color: #FE980F;
+}
+.wrap-tab .tabs .tab {
+  display: none;
+  position: absolute;
+  animation: fadeInFromNone 0.8s ease-out;
+}
+.wrap-tab .tabs .tab.active {
+  display: block;
+  position: relative;
+}
+.wrap-slider a.arrow {
+  z-index: 100;
+}
+.wrap-slider .slider {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  animation: fadeInFromNone 0.8s ease-out;
+}
+.wrap-slider .slider.active {
+  display: block;
+  position: relative;
+}
